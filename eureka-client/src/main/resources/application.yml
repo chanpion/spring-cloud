@@ -1,0 +1,14 @@
+server:
+  port: 9761
+
+spring:
+  application:
+    name: service-hi
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    appname: service-hi
+    prefer-ip-address: true
